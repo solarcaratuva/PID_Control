@@ -26,10 +26,10 @@ float Update(pid_controller *pid) {
 int main() {
     pid_controller controller;
 
-    // Initialize controller
+    // Initialize controller - adjust these gain constants to "shape" the oscillations
     controller.k_p = 2.0f;
-    controller.k_i = 0.5f;
-    controller.k_d = 0.25f;
+    controller.k_i = 1.75f;
+    controller.k_d = 0.50f;
 
     controller.d_tau = 0.02f;
 
